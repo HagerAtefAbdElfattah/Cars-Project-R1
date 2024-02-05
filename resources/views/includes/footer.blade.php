@@ -4,11 +4,13 @@
             <div class="row">
                 <div class="col-lg-3">
                 <h2 class="footer-heading mb-4">About Us</h2>
-                <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. </p>
+                <p>Hager Atef - Backend-web developer. </p>
+                <p>Php. Laravel. </p>
                 <ul class="list-unstyled social">
                     <li><a href="#"><span class="icon-facebook"></span></a></li>
                     <li><a href="#"><span class="icon-instagram"></span></a></li>
                     <li><a href="#"><span class="icon-twitter"></span></a></li>
+                    <li><a href="https://github.com/HagerAtefAbdElfattah"><span class="icon-github"></span></a></li>
                     <li><a href="https://www.linkedin.com/in/hager-atef-464870224/"><span class="icon-linkedin"></span></a></li>
                 </ul>
                 </div>
