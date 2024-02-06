@@ -124,6 +124,9 @@ class MessageController extends Controller
         return redirect()->route('messagesList');
     }
 
+    /**
+     * Mark all the messages as read.
+     */
     public function markAsReadMessages()
     {
         Message::query()->update(['read' => true]);
