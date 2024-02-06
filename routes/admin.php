@@ -62,6 +62,7 @@ Route::prefix('admin')->middleware('verified', 'notify')->group(function(){
             Route::prefix('messages')->group(function () {
                 Route::get('/messagesList', [MessageController::class, 'index'])->name('messagesList');
                 Route::get('/showMessages/{id}', [MessageController::class, 'show'])->name('showMessages');
+                Route::get('/markAsReadMessages', [MessageController::class, 'markAsReadMessages'])->name('markAsReadMessages');
                 Route::get('/deleteMessages/{id}', [MessageController::class, 'destroy'])->name('deleteMessages');
             });
 

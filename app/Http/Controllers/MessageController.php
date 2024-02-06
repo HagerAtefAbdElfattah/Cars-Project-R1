@@ -123,4 +123,11 @@ class MessageController extends Controller
 
         return redirect()->route('messagesList');
     }
+
+    public function markAsReadMessages()
+    {
+        Message::query()->update(['read' => true]);
+
+        return redirect()->route('messagesList');
+    }
 }

@@ -31,7 +31,7 @@
       <li class="nav-item">
         <div class="text-center">
             <a class="dropdown-item">
-               <a href="{{ route('messagesList') }}"><strong>See All Messages</strong></a> 
+               <a href="{{ route('markAsReadMessages') }}"><strong>See All Messages</strong></a> 
                 <i class="fa fa-angle-right"></i>
             </a>
         </div>
