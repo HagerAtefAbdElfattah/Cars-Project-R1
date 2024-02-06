@@ -31,7 +31,7 @@ class ConectUsMail extends Mailable
     {
         return new Envelope(
 
-            from: new Address($this->data['email'], $this->data['firstName'], $this->data['lastName']),
+            from: new Address($this->data['email'], $this->data['firstName'].' '. $this->data['lastName']),
 
             subject: 'Conect Us Mail',
         );

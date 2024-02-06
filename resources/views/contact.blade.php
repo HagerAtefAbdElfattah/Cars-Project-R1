@@ -21,14 +21,29 @@
               <div class="form-group row">
                 <div class="col-md-6 mb-4 mb-lg-0">
                   <input type="text" class="form-control" placeholder="First name" name="firstName" value="{{old('firstName')}}">
+                  @error('firstName')
+                   <div class="help-block text-danger">
+                     <strong>Warning!</strong> {{$message}}
+                   </div>
+                  @enderror
                 </div>
                 <div class="col-md-6">
                   <input type="text" class="form-control" placeholder="Last name" name="lastName" value="{{old('lastName')}}">
+                   @error('lastName')
+                   <div class="help-block text-danger">
+                     <strong>Warning!</strong> {{$message}}
+                   </div>
+                  @enderror
                 </div>
               </div>
               <div class="form-group row">
                 <div class="col-md-12">
                   <input type="text" class="form-control" placeholder="Email address" name="email" value="{{old('email')}}">
+                  @error('email')
+                   <div class="help-block text-danger">
+                     <strong>Warning!</strong> {{$message}}
+                   </div>
+                  @enderror
                   <input type="hidden" value="0" name="read">
                 </div>
               </div>
@@ -36,6 +51,11 @@
               <div class="form-group row">
                 <div class="col-md-12">
                   <textarea name="content" id="" class="form-control" placeholder="Write your message." cols="30" rows="10">{{old('content')}}</textarea>
+                   @error('content')
+                   <div class="help-block text-danger">
+                     <strong>Warning!</strong> {{$message}}
+                   </div>
+                  @enderror
                 </div>
               </div>
               
