@@ -54,7 +54,7 @@
                                     <label class="col-form-label col-md-3 col-sm-3 label-align" for="title">Title <span class="required">*</span>
                                     </label>
                                     <div class="col-md-6 col-sm-6 ">
-                                        <input type="text" id="title" class="form-control" name="title" value="{{$car->title}}">
+                                        <input type="text" id="title" class="form-control" required="required" name="title" value="{{$car->title}}">
                                         @error('title')
                                         <div class="help-block text-danger">
                                             <strong>Warning!</strong> {{$message}}
@@ -66,7 +66,7 @@
                                     <label class="col-form-label col-md-3 col-sm-3 label-align" for="content">Content <span class="required">*</span>
                                     </label>
                                     <div class="col-md-6 col-sm-6 ">
-                                        <textarea id="content" name="content" class="form-control">{{$car->content}}</textarea>
+                                        <textarea id="content" name="content" required="required" class="form-control">{{$car->content}}</textarea>
                                         @error('content')
                                         <div class="help-block text-danger">
                                             <strong>Warning!</strong> {{$message}}
@@ -77,7 +77,7 @@
                                 <div class="item form-group">
                                     <label for="luggage" class="col-form-label col-md-3 col-sm-3 label-align">Luggage <span class="required">*</span></label>
                                     <div class="col-md-6 col-sm-6 ">
-                                        <input id="luggage" class="form-control" type="number" name="luggage" value="{{$car->luggage}}">
+                                        <input id="luggage" class="form-control" required="required" type="number" name="luggage" value="{{$car->luggage}}">
                                         @error('luggage')
                                         <div class="help-block text-danger">
                                             <strong>Warning!</strong> {{$message}}
@@ -88,7 +88,7 @@
                                 <div class="item form-group">
                                     <label for="doors" class="col-form-label col-md-3 col-sm-3 label-align">Doors <span class="required">*</span></label>
                                     <div class="col-md-6 col-sm-6 ">
-                                        <input id="doors" class="form-control" type="number" name="doors" value="{{$car->doors}}">
+                                        <input id="doors" class="form-control" required="required" type="number" name="doors" value="{{$car->doors}}">
                                         @error('doors')
                                         <div class="help-block text-danger">
                                             <strong>Warning!</strong> {{$message}}
@@ -99,7 +99,7 @@
                                 <div class="item form-group">
                                     <label for="passengers" class="col-form-label col-md-3 col-sm-3 label-align">Passengers <span class="required">*</span></label>
                                     <div class="col-md-6 col-sm-6 ">
-                                        <input id="passengers" class="form-control" type="number" name="passengers" value="{{$car->passengers}}">
+                                        <input id="passengers" class="form-control" required="required" type="number" name="passengers" value="{{$car->passengers}}">
                                         @error('passengers')
                                         <div class="help-block text-danger">
                                             <strong>Warning!</strong> {{$message}}
@@ -110,7 +110,7 @@
                                 <div class="item form-group">
                                     <label for="price" class="col-form-label col-md-3 col-sm-3 label-align">Price <span class="required">*</span></label>
                                     <div class="col-md-6 col-sm-6 ">
-                                        <input id="price" class="form-control" type="number" name="price" value="{{$car->price}}">
+                                        <input id="price" class="form-control"  required="required" type="number" name="price" value="{{$car->price}}">
                                         @error('price')
                                         <div class="help-block text-danger">
                                             <strong>Warning!</strong> {{$message}}
@@ -130,7 +130,7 @@
                                     <label class="col-form-label col-md-3 col-sm-3 label-align" for="image">Image <span class="required">*</span>
                                     </label>
                                     <div class="col-md-6 col-sm-6 ">
-                                        <input type="file" id="image" name="image" class="form-control" value="{{$car->image}}">
+                                        <input type="file" id="image" name="image" required="required" class="form-control" value="{{$car->image}}">
                                         @error('image')
                                         <div class="help-block text-danger">
                                             <strong>Warning!</strong> {{$message}}

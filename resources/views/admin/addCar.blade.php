@@ -51,7 +51,7 @@
 											<label class="col-form-label col-md-3 col-sm-3 label-align" for="title">Title <span class="required">*</span>
 											</label>
 											<div class="col-md-6 col-sm-6 ">
-												<input type="text" id="title" class="form-control" name="title" placeholder="Title" value="{{old('title')}}">
+												<input type="text" id="title" class="form-control"  required="required" name="title" placeholder="Title" value="{{old('title')}}">
 												@error('title')
 												<div class="help-block text-danger">
                                                  <strong>Warning!</strong> {{$message}}
@@ -63,7 +63,7 @@
 											<label class="col-form-label col-md-3 col-sm-3 label-align" for="content">Content <span class="required">*</span>
 											</label>
 											<div class="col-md-6 col-sm-6 ">
-												<textarea id="content" class="form-control" name="content" placeholder="Content">{{old('content')}}</textarea>
+												<textarea id="content" class="form-control"  required="required" name="content" placeholder="Content">{{old('content')}}</textarea>
 												@error('contect')
 												<div class="help-block text-danger">
                                                  <strong>Warning!</strong> {{$message}}
@@ -74,7 +74,7 @@
 										<div class="item form-group">
 											<label class="col-form-label col-md-3 col-sm-3 label-align" for="luggage">Luggage <span class="required">*</span></label>
 											<div class="col-md-6 col-sm-6 ">
-												<input type="number" id="luggage" class="form-control" name="luggage" placeholder="Luggage" value="{{old('luggage')}}">
+												<input type="number" id="luggage" class="form-control"  required="required" name="luggage" placeholder="Luggage" value="{{old('luggage')}}">
 												@error('luggage')
 												<div class="help-block text-danger">
                                                  <strong>Warning!</strong> {{$message}}
@@ -85,7 +85,7 @@
 										<div class="item form-group">
 											<label for="doors" class="col-form-label col-md-3 col-sm-3 label-align">Doors <span class="required">*</span></label>
 											<div class="col-md-6 col-sm-6 ">
-												<input type="number" id="doors" class="form-control" name="doors" placeholder="Doors" value="{{old('doors')}}">
+												<input type="number" id="doors" class="form-control"  required="required" name="doors" placeholder="Doors" value="{{old('doors')}}">
 												@error('doors')
 												<div class="help-block text-danger">
                                                  <strong>Warning!</strong> {{$message}}
@@ -96,7 +96,7 @@
 										<div class="item form-group">
 											<label for="passengers" class="col-form-label col-md-3 col-sm-3 label-align">Passengers <span class="required">*</span></label>
 											<div class="col-md-6 col-sm-6 ">
-												<input type="number" id="passengers" class="form-control" name="passengers" placeholder="Passengers" value="{{old('passengers')}}">
+												<input type="number" id="passengers" class="form-control"  required="required" name="passengers" placeholder="Passengers" value="{{old('passengers')}}">
 												@error('passengers')
 												<div class="help-block text-danger">
                                                  <strong>Warning!</strong> {{$message}}
@@ -107,7 +107,7 @@
 										<div class="item form-group">
 											<label for="price" class="col-form-label col-md-3 col-sm-3 label-align">Price <span class="required">*</span></label>
 											<div class="col-md-6 col-sm-6 ">
-												<input type="number" id="price" class="form-control" name="price" placeholder="Price" value="{{old('price')}}"> 
+												<input type="number" id="price" class="form-control"  required="required" name="price" placeholder="Price" value="{{old('price')}}"> 
 												@error('price')
 												<div class="help-block text-danger">
                                                  <strong>Warning!</strong> {{$message}}
@@ -126,7 +126,7 @@
 										<div class="item form-group">
 											<label class="col-form-label col-md-3 col-sm-3 label-align" for="image">Image <span >*</span></label>
 											<div class="col-md-6 col-sm-6 ">
-												<input type="file" id="image" name="image" class="form-control">
+												<input type="file" id="image" name="image"  required="required" class="form-control">
 												@error('image')
 												<div class="help-block text-danger">
                                                  <strong>Warning!</strong> {{$message}}

@@ -53,7 +53,7 @@
 											<label class="col-form-label col-md-3 col-sm-3 label-align" for="first-name">Full Name <span class="required">*</span>
 											</label>
 											<div class="col-md-6 col-sm-6 ">
-												<input type="text" id="first-name" name="name" class="form-control " value="{{ $user->name }}" placeholder="Full Name" >
+												<input type="text" id="first-name" name="name" required="required" class="form-control " value="{{ $user->name }}" placeholder="Full Name" >
 												@error('name')
 												<div class="help-block text-danger">
 													<strong>Warning!</strong> {{$message}}
@@ -65,7 +65,7 @@
 											<label class="col-form-label col-md-3 col-sm-3 label-align" for="user-name">Username <span class="required">*</span>
 											</label>
 											<div class="col-md-6 col-sm-6 ">
-												<input type="text" id="user-name" name="userName" class="form-control " value="{{ $user->userName }}" placeholder="Username">
+												<input type="text" id="user-name" required="required" name="userName" class="form-control " value="{{ $user->userName }}" placeholder="Username">
 												@error('userName')
 												<div class="help-block text-danger">
 													<strong>Warning!</strong> {{$message}}
@@ -77,7 +77,7 @@
 											<label class="col-form-label col-md-3 col-sm-3 label-align" for="email">Email <span class="required">*</span>
 											</label>
 											<div class="col-md-6 col-sm-6 ">
-												<input type="email" id="email"  name="email" class="form-control " value="{{ $user->email }}" placeholder="email">
+												<input type="email" id="email"  name="email" required="required" class="form-control " value="{{ $user->email }}" placeholder="email">
 												@error('email')
 												<div class="help-block text-danger">
 													<strong>Warning!</strong> {{$message}}
@@ -98,7 +98,7 @@
 											<label class="col-form-label col-md-3 col-sm-3 label-align" for="password">Password <span class="required">*</span>
 											</label>
 											<div class="col-md-6 col-sm-6 ">
-												<input type="password" id="password" name="password" class="form-control " value="{{ $user->password }}" placeholder="Password">
+												<input type="password" id="password" required="required" name="password" class="form-control " value="{{ $user->password }}" placeholder="Password">
 												@error('password')
 												<div class="help-block text-danger">
 													<strong>Warning!</strong> {{$message}}

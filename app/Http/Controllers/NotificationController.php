@@ -28,6 +28,6 @@ class NotificationController extends Controller
 
         $notifications->markAsRead();
 
-        return redirect()->route('messagesList');
+        return redirect()->back();
     }
 }

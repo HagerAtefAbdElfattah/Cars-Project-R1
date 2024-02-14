@@ -52,7 +52,7 @@
                                 <label class="col-form-label col-md-3 col-sm-3 label-align" for="name">Name <span class="required">*</span>
                                 </label>
                                 <div class="col-md-6 col-sm-6 ">
-                                    <input type="text" id="name" name="name" class="form-control" value="{{ $testimonial->name }}">
+                                    <input type="text" id="name" required="required" name="name" class="form-control" value="{{ $testimonial->name }}">
                                     @error('name')
                                     <div class="help-block text-danger">
                                         <strong>Warning!</strong> {{$message}}
@@ -64,7 +64,7 @@
                                 <label class="col-form-label col-md-3 col-sm-3 label-align" for="name">Position <span class="required">*</span>
                                 </label>
                                 <div class="col-md-6 col-sm-6 ">
-                                    <input type="text" id="position" name="position" class="form-control" value="{{ $testimonial->position }}">
+                                    <input type="text" id="position" required="required" name="position" class="form-control" value="{{ $testimonial->position }}">
                                      @error('position')
                                     <div class="help-block text-danger">
                                         <strong>Warning!</strong> {{$message}}
@@ -76,7 +76,7 @@
                                 <label class="col-form-label col-md-3 col-sm-3 label-align" for="content">Content <span class="required">*</span>
                                 </label>
                                 <div class="col-md-6 col-sm-6 ">
-                                    <textarea id="content" name="content" class="form-control">{{ $testimonial->content }}</textarea>
+                                    <textarea id="content" name="content" required="required" class="form-control">{{ $testimonial->content }}</textarea>
                                     @error('content')
                                     <div class="help-block text-danger">
                                         <strong>Warning!</strong> {{$message}}
@@ -97,7 +97,7 @@
                                 <label class="col-form-label col-md-3 col-sm-3 label-align" for="image">Image <span class="required">*</span>
                                 </label>
                                 <div class="col-md-6 col-sm-6 ">
-                                    <input type="file" id="image" name="image" class="form-control" value="{{ $testimonial->image }}">
+                                    <input type="file" id="image" name="image" class="form-control" required="required" value="{{ $testimonial->image }}">
                                     <img src="{{asset('assets/images/'. $testimonial->image)}}" alt="{{ $testimonial->name }}" style="width: 300px;">
                                     @error('image')
                                     <div class="help-block text-danger">

@@ -51,7 +51,7 @@
 											<label class="col-form-label col-md-3 col-sm-3 label-align" for="name">Name <span class="required">*</span>
 											</label>
 											<div class="col-md-6 col-sm-6">
-												<input type="text" id="name" name="name" class="form-control" value="{{old('name')}}" placeholder="Name">
+												<input type="text" id="name" name="name" required="required" class="form-control" value="{{old('name')}}" placeholder="Name">
 												@error('name')
 												<div class="help-block text-danger">
                                                  <strong>Warning!</strong> {{$message}}
@@ -63,7 +63,7 @@
 											<label class="col-form-label col-md-3 col-sm-3 label-align" for="name">Position <span class="required">*</span>
 											</label>
 											<div class="col-md-6 col-sm-6">
-												<input type="text" id="position" name="position" class="form-control" value="{{old('position')}}" placeholder="Position ">
+												<input type="text" id="position" name="position" required="required" class="form-control" value="{{old('position')}}" placeholder="Position ">
 												@error('position')
 												<div class="help-block text-danger">
                                                  <strong>Warning!</strong> {{$message}}
@@ -75,7 +75,7 @@
 											<label class="col-form-label col-md-3 col-sm-3 label-align" for="content">Content <span class="required">*</span>
 											</label>
 											<div class="col-md-6 col-sm-6">
-												<textarea id="content" name="content" class="form-control" placeholder="Content">{{old('content')}}</textarea>
+												<textarea id="content" name="content" class="form-control" required="required" placeholder="Content">{{old('content')}}</textarea>
 												@error('content')
 												<div class="help-block text-danger">
                                                  <strong>Warning!</strong> {{$message}}
@@ -87,7 +87,7 @@
 											<label class="col-form-label col-md-3 col-sm-3 label-align">Published</label>
 											<div class="checkbox">
 												<label>
-													<input type="checkbox" class="flat" name="published" value="{{old('published')}}" placeholder="Published">
+													<input type="checkbox" class="flat" name="published" required="required" value="{{old('published')}}" placeholder="Published">
 												</label>
 											</div>
 										</div>
@@ -95,7 +95,7 @@
 											<label class="col-form-label col-md-3 col-sm-3 label-align" for="image">Image <span class="required">*</span>
 											</label>
 											<div class="col-md-6 col-sm-6">
-												<input type="file" id="image" name="image" class="form-control" value="{{old('image')}}" placeholder="Image">
+												<input type="file" id="image" name="image" required="required" class="form-control" value="{{old('image')}}" placeholder="Image">
 												@error('image')
 												<div class="help-block text-danger">
                                                  <strong>Warning!</strong> {{$message}}

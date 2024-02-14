@@ -52,7 +52,7 @@
 											<label class="col-form-label col-md-3 col-sm-3 label-align" for="first-name">Full Name <span class="required">*</span>
 											</label>
 											<div class="col-md-6 col-sm-6 ">
-												<input type="text" id="first-name" name="name" placeholder="Full Name" class="form-control" value="{{old('name')}}"  >
+												<input type="text" id="first-name" required="required" name="name" placeholder="Full Name" class="form-control" value="{{old('name')}}"  >
 												@error('name')
 												<div class="help-block text-danger">
 													<strong>Warning!</strong> {{$message}}
@@ -64,7 +64,7 @@
 											<label class="col-form-label col-md-3 col-sm-3 label-align" for="user-name">Username <span class="required">*</span>
 											</label>
 											<div class="col-md-6 col-sm-6 ">
-												<input type="text" id="user-name" name="userName" placeholder="Username" class="form-control" value="{{old('userName')}}" >
+												<input type="text" id="user-name" required="required" name="userName" placeholder="Username" class="form-control" value="{{old('userName')}}" >
 												@error('userName')
 												<div class="help-block text-danger">
 													<strong>Warning!</strong> {{$message}}
@@ -76,7 +76,7 @@
 											<label class="col-form-label col-md-3 col-sm-3 label-align" for="email">Email <span class="required">*</span>
 											</label>
 											<div class="col-md-6 col-sm-6 ">
-												<input type="email" id="email"  name="email" placeholder="Email" class="form-control" value="{{old('email')}}" >
+												<input type="email" id="email" required="required"  name="email" placeholder="Email" class="form-control" value="{{old('email')}}" >
                                                 @error('email')
 												<div class="help-block text-danger">
 													<strong>Warning!</strong> {{$message}}
@@ -96,7 +96,7 @@
 											<label class="col-form-label col-md-3 col-sm-3 label-align " for="password">Password <span class="required">*</span>
 											</label>
 											<div class="col-md-6 col-sm-6 ">
-												<input type="password" id="password" name="password" placeholder="password" class="form-control" value="{{old('password')}}">
+												<input type="password" id="password" required="required" name="password" placeholder="password" class="form-control" value="{{old('password')}}">
 												@error('password')
 												<div class="help-block text-danger">
 													<strong>Warning!</strong> {{$message}}
