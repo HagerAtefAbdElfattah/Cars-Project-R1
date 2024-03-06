@@ -9,7 +9,7 @@
       <div class="login_wrapper">
         <div class="animate form login_form">
           <section class="login_content">
-            <form method="POST" action="{{ route('login') }}">
+            <form id="submit-form" method="POST" action="{{ route('login') }}">
                         @csrf
               <h1>Login Form</h1>
               <div>
@@ -31,9 +31,11 @@
                 </label>
             </div>
               <div>
-                <a><button type="submit" class="btn btn-primary">
+                 <a class="btn btn-default submit"  onclick="event.preventDefault(); document.getElementById('submit-form').submit();">Log in</a>
+                
+                {{-- <a><button type="submit" class="btn btn-primary">
                                     {{ __('Login') }}
-                                </button></a>
+                                </button></a> --}}
                     
                 @if (Route::has('password.request'))
                 <a class="btn btn-link" href="{{ route('password.request') }}"> Lost your password? </a>

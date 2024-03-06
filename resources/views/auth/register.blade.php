@@ -10,7 +10,7 @@
       <div class="login_wrapper">
         <div id="register" class="animate form registration_form">
           <section class="login_content">
-             <form method="POST" action="{{ route('register') }}">
+             <form id="submit-form" method="POST" action="{{ route('register') }}">
                  @csrf
               <h1>Create Account</h1>
               <div>
@@ -54,7 +54,8 @@
                 @enderror
               </div>
               <div>
-                <a><button type="submit" class="btn btn-primary">{{ __('Register') }}</a>
+                <a class="btn btn-default submit" onclick="event.preventDefault(); document.getElementById('submit-form').submit();">Submit</a>
+                {{-- <a><button type="submit" class="btn btn-primary">{{ __('Register') }}</a> --}}
               </div>
 
               <div class="clearfix"></div>
